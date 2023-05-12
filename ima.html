@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<style>
+    header{
+        background-color: #003b6f;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        text-transform: uppercase;
+    }
+    body{
+        background-color: whitesmoke;
+    }
+    footer{
+        background-color: #003b6f;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .menu{
+        list-style: square;
+        margin: 0;
+        padding: 0;
+    }
+    .menu li{
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .menu li a{
+        display: block;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px 30px;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .menu i a:hover{
+        background-color: #aaa7a2;
+        text-decoration: underline;
+    }
+    img {
+        width: 150px;
+        height: 80px;
+    }
+    h1{
+        margin-left: 46px;
+        font-size: 36px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+    }
+    h2{
+        margin-left: 46px;
+        font-family: 'Montserrat',sans-serif;
+    }
+    p{
+        margin-top: 40px;
+        margin-right: 40px;
+        margin-left: 40px;
+        text-align: justify;
+        font-size: large;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .primeraparte img{
+        float: right;
+        margin-left: 25px;
+        margin-right: 30px;
+        height: 800px;
+        width: 300px;
+    }
+    figcaption{
+        margin-top: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+</style>
+
+<head>
+    <title>Producto Integrador de Aprendizaje</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<header>
+    <ul class="menu">
+        <li><a href="https://www.fime.uanl.mx/"><img src="https://th.bing.com/th/id/R.0e9b6b425d5e1350eafc8002bc9d853d?rik=OHq6gcxcMHnAJQ&riu=http%3a%2f%2flogistica.fime.uanl.mx%2fimg%2flogo-fime.gif&ehk=dCGkpH1Ip430FQSFCoEWM2KFVxeIRrwTM%2fBBBwNWhCM%3d&risl=&pid=ImgRaw&r=0" alt="Logo de la UANL"></a></li>
+        <li><a href="index.html">Pagina de Inicio</a></li>
+        <li><a href="Quienes somos.html">Quienes somos</a></li>
+        <li><a href="diferentes ingenierias.html">Diferentes Ingenierías</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="referencias.html">Referencias</a></li>
+    </ul>
+</header>
+
+<body>
+    <h1>Ingeniería Mecánica Administrativa</h1>
+    <div class="primeraparte">
+        <figure>
+            <img src="C:\Users\athena\Downloads\infografiaima.PNG" alt="infografia de la carrera">
+            <figurecaption>Descarga la infografía dando click <a href="C:\Users\athena\Downloads\infografiaima.PNG" download>aquí</a></figurecaption>
+        </figure>
+        <p>La ingeniería mecánica administrativa es una especialidad que abarca el estudio de las matemáticas y ciencias sociales para diagnosticar e implementar soluciones a problemas relacionados con los sistemas mecánicos generales. Esta ciencia se centra en el desarrollo de conocimientos relacionados con los sistemas de producción, manufactura, mecánica y de transformación en el rubro empresarial.</p>
+        <p>Por lo antes mencionado, el trabajo como mecánico administrador se define como la labor de los profesionales que buscan administrar los recursos y equipos destinados para el desarrollo de procesos y fabricación de productos (Equipo editorial de Indeed, 2023).</p>
+        <h2>Desafíos de la Ingeniería</h2>
+        <p>Los altos costos de producción son una de las principales dificultades a las que se enfrenta la ingeniería mecánica administrativa, ya que, en promedio, el costo de producción en la industria de manufactura en Estados Unidos ha aumentado un 24% en la última década. </p>
+        <p>Los procesos en la ingeniería mecánica administrativa son cada vez más complejos y sofisticados, lo que dificulta la planificación y el control. Además, las innovaciones en tecnología y materiales hacen que los procesos cambien constantemente.</p>
+        <p>Otra dificultad es la competencia global, ya que, con la globalización, las empresas se enfrentan a la competencia de países con mano de obra más barata y regulaciones menos estrictas. Por ejemplo, el 44% de las empresas de fabricación de Estados Unidos, informaron que la competencia global fue su mayor desafío en el 2018 (Max, 2020).</p>
+        <div style="width: 400px; height: 200px; flex-direction: row; margin-left: 40px;">
+            <canvas id="myChart"></canvas>
+            <script>
+                var datos = {
+                    labels: ["2016", "2017", "2018", "2019", "2020"],
+                    datasets: [{
+                        label: "Ventas por Año",
+                        data: [1200000, 1500000, 1800000, 2000000, 2200000],
+                        backgroundColor: "rgba(104, 152, 233, 0.72)",
+                        borderColor: "rgba(0, 0, 105, 1)",
+                        borderWidth: 1
+                    }]
+                };
+                var configuracion = {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                            beginAtZero: true
+                            }
+                        }]
+                    } 
+                };
+
+                var ctx= document.getElementById("myChart").getContext("2d");
+                var myChart = new Chart(ctx, {
+                    type:'bar',
+                    data:datos,
+                    options: configuracion
+                });
+            </script>
+        </div>
+        <p>La automatización es una tendencia en la ingeniería mecánica administrativa que puede ayudar a mejorar la eficiencia, la productividad y la calidad. Sin embargo, la automatización también presenta desafíos, como la necesidad de reentrenar a los trabajadores para realizar nuevas tareas. Según un estudio, se espera que la automatización tenga un impacto negativo en el empleo en la industria manufacturera de EE. UU. en el corto plazo.</p>
+            <p>En resumen, la ingeniería mecánica administrativa se enfrenta a varias dificultades, entre las que se encuentran los altos costos de producción, la complejidad de los procesos, los problemas de calidad, la competencia global y la automatización. Estos desafíos tienen un impacto económico significativo, como el aumento de los costos de producción o la pérdida de empleo en la industria manufacturera.</p>
+        </div>
+
+
+</body>
+
+<footer>
+    Propiedad de Equipo 2 de Aplicacion de las Tecnologías 2023
+</footer>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    header{
+         background-color: #003b6f;
+         color: white;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 20px;
+         text-transform: uppercase;
+    }
+    body{
+        background-color: whitesmoke;
+    }
+    footer{
+        background-color: #003b6f;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .menu{
+        list-style: square;
+        margin: 0;
+        padding: 0;
+    }
+    .menu li{
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .menu li a{
+        display: block;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px 30px;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .menu li a:hover{
+        background-color: #aaa7a2;
+        text-decoration: underline;
+    }
+    img{
+        width: 150px;
+        height: 80px;
+    }
+    h2{
+        margin-left: 46px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    p{
+        margin-top: 40px;
+        margin-right: 40px;
+        margin-left: 40px;
+        text-align: justify;
+        font-size: large;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .infografia img {
+        width: 300px;
+        height: 800px;
+        margin-right: 15px;
+    }
+    .carreras img{
+        width: 500px;
+        height: 300px;
+    }
+    form {
+        display: block;
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+</style>
+
+<head>
+	<title>Subir archivo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<header>
+    <ul class="menu">
+        <li><a href="https://www.fime.uanl.mx/"><img src="https://th.bing.com/th/id/R.0e9b6b425d5e1350eafc8002bc9d853d?rik=OHq6gcxcMHnAJQ&riu=http%3a%2f%2flogistica.fime.uanl.mx%2fimg%2flogo-fime.gif&ehk=dCGkpH1Ip430FQSFCoEWM2KFVxeIRrwTM%2fBBBwNWhCM%3d&risl=&pid=ImgRaw&r=0" alt="Logo de la UANL"></a></li>
+        <li><a href="index.html">Pagina de Inicio</a></li>
+        <li><a href="Quienes somos.html">Quienes somos</a></li>
+        <li><a href="diferentes ingenierias.html">Diferentes Ingenierías</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="referencias.html">Referencias</a></li>  
+    </ul>
+</header>
+
+<body>
+    <ul class="infografia">
+        <img src="C:\Users\athena\Downloads\infografiacomunicacion.jpg" alt="infografia de la carrera">
+        <img src="C:\Users\athena\Downloads\infografiamateriales.jpg" alt="infografia de la carrera">
+        <img src="C:\Users\athena\Downloads\infografiamanufactura.jpg" alt="infografia de la carrera">
+        <img src="C:\Users\athena\Downloads\infografiaima.PNG" alt="infografia de la carrera">
+        <img src="C:\Users\athena\Downloads\infografiaits.jpg" alt="infografia de la carrera">
+        <img src="C:\Users\athena\Downloads\infografiamecatronica.PNG" alt="infografia de la carrera">
+
+    </ul>
+    <ul class="carreras">
+        <img src="https://th.bing.com/th/id/R.a26aa83b78d72042561ce038cc3bd040?rik=QTbiOxPvGQBi%2bA&pid=ImgRaw&r=0" alt="Mecatronica">
+        <img src="https://th.bing.com/th/id/R.9434d6689d2377a857aa39ec03f5f3f9?rik=d6%2frC0O6CYKXbg&pid=ImgRaw&r=0" alt="ITS">
+        <img src="https://th.bing.com/th/id/R.560adc245d69a37d9d0eee3b62066c8b?rik=YlF6v5uLOPmKLA&pid=ImgRaw&r=0" alt="IMA">
+        <img src="https://th.bing.com/th/id/R.49e5482cc9588570041c2bc51d880947?rik=mEp75exf%2bCSGOA&pid=ImgRaw&r=0" alt="Manufactura">
+        <img src="https://i.pinimg.com/originals/52/14/8b/52148b7fbcd5a21a6f88b9cef7e1f903.jpg" alt="Materiales">
+        <img src="https://micarrerauniversitaria.com/wp-content/uploads/2018/02/foto_0000000120150612164228.jpg" alt="Ingeniería en Electronica y Comunicacion">
+    </ul>
+	<h2>Subir archivo</h2>
+	<form action="uploadFile" method="post" enctype="multipart/form-data">
+		Seleccione un archivo: <input type="file" name="file"><br>
+		<input type="submit" value="Subir archivo">
+	</form>
+</body>
+
+<footer>
+    Propiedad de Equipo 2 de Aplicación de las Tecnologías
+</footer>
+</html>
